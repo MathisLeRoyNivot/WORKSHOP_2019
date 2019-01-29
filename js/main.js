@@ -3,9 +3,9 @@ const personData = [
         firstName: "Steven",
         lastName: "Fongue",
         status: "Chef d'équipe",
-        promo: "Master 2 - Informatique",
+        promo: "Master 2 - Informatique (Dev)",
         mySkills: ["Développeur"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-steven.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -13,7 +13,7 @@ const personData = [
         lastName: "Guillard",
         promo: "Bachelor 2 - Informatique",
         mySkills: ["Développement Full Stack - Junior"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-corentinG.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -21,7 +21,7 @@ const personData = [
         lastName: "Kossoboutzky",
         promo: "Bachelor 1 - 3D Animations",
         mySkills: ["Modélisation 3D"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-dimitri.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -29,7 +29,7 @@ const personData = [
         lastName: "Le Roy-Nivot",
         promo: "Bachelor 2 - Informatique",
         mySkills: ["Développement Full Stack - Junior", "Montage Vidéo"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-mathis.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -37,7 +37,7 @@ const personData = [
         lastName: "Lemarchand",
         promo: "Bachelor 1 - 3D Animations",
         mySkills: ["Modélisation 3D"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-corentinL.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -45,7 +45,7 @@ const personData = [
         lastName: "Marcillet",
         promo: "Master 1 - Communication 360",
         mySkills: ["Marketing", "Communication"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-julien.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -53,7 +53,7 @@ const personData = [
         lastName: "Maheo",
         promo: "Master 2 - Informatique (Réseaux)",
         mySkills: ["Administration des systèmes", "Administration réseau"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-kevin.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -61,7 +61,7 @@ const personData = [
         lastName: "Orfèvres",
         promo: "Bachelor 3 - Informatique",
         mySkills: ["Développement Full Stack"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-theodore.png",
         content: "Absent"
     },
     {
@@ -69,7 +69,7 @@ const personData = [
         lastName: "Pouillet",
         promo: "Bachelor 3 - Design",
         mySkills: ["Design"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-clementine.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -77,7 +77,7 @@ const personData = [
         lastName: "Nouzillat",
         promo: "Master 1 - Chef de projet Web",
         mySkills: ["Développement Full Stack"],
-        photo: "https://via.placeholder.com/150",
+        photo: "img/faces/img-alix.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     }
 ];
@@ -92,7 +92,7 @@ ${status.map(status => `${status}`).join("")}
 
 function skills(skills) {
     return `
-<h4>Compétences</h4>
+<h4 class="skills-title">Compétences</h4>
 <ul class="skills-list">
 ${skills.map(skills => `<li class="skills">${skills}</li>`).join("")}
 </ul>
@@ -105,6 +105,7 @@ function personTemplate(person) {
     <img class="person-photo" src="${person.photo}">
     <h2 class="person-name">${person.firstName} <span class="lastname">${person.lastName}</span></h2>
     <h4 class="person-promo">${person.promo}</h4>
+    <hr class="card-separator">
     ${person.mySkills ? skills(person.mySkills) : ""}
     <div class="overlay">
     <div class="text">${person.content}</div>
@@ -126,14 +127,7 @@ document.getElementById("footer-content").innerHTML = `
 </div>
 `;
 
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-
 // ${personData.length} personnes composent le groupe #18 -
-
-
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
@@ -144,12 +138,6 @@ function scrollFunction() {
     } else {
         document.getElementById("myBtn").style.display = "none";
     }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
 }
 
 
@@ -171,4 +159,25 @@ function MenuBurger() {
         y.style.display = "none";
         z.style.display = "block";
     }
+}
+
+
+
+
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
