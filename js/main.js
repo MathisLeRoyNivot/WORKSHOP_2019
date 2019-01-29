@@ -113,5 +113,9 @@ document.getElementById("footer-content").innerHTML = `
 </div>
 `;
 
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
 
 // ${personData.length} personnes composent le groupe #18 -
