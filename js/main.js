@@ -82,6 +82,7 @@ function personTemplate(person) {
 
 document.getElementById("app").innerHTML = `
   ${personData.map(personTemplate).join("")}
-  <p class="footer">${personData.length} personnes composent le groupe n°18</p>
 `;
-
+document.getElementById("container-footer").innerHTML = `
+<p class="footer">${personData.length} personnes composent le groupe n°18</p>
+`;
