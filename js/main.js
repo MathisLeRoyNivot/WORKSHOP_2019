@@ -5,7 +5,7 @@ const personData = [
         status: "Chef d'équipe",
         promo: "Master 2 - Informatique (Dev)",
         mySkills: ["Développeur"],
-        photo: "../img/faces/img-steven.png",
+        photo: "/img/faces/img-steven.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -13,7 +13,7 @@ const personData = [
         lastName: "Guillard",
         promo: "Bachelor 2 - Informatique",
         mySkills: ["Développement Full Stack - Junior"],
-        photo: "../img/faces/img-corentinG.png",
+        photo: "img/faces/img-corentinG.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -21,7 +21,7 @@ const personData = [
         lastName: "Kossoboutzky",
         promo: "Bachelor 1 - 3D Animations",
         mySkills: ["Modélisation 3D"],
-        photo: "../img/faces/img-dimitri.png",
+        photo: "img/faces/img-dimitri.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -29,7 +29,7 @@ const personData = [
         lastName: "Le Roy-Nivot",
         promo: "Bachelor 2 - Informatique",
         mySkills: ["Développement Full Stack - Junior", "Montage Vidéo"],
-        photo: "../img/faces/img-mathis.png",
+        photo: "img/faces/img-mathis.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -45,7 +45,7 @@ const personData = [
         lastName: "Marcillet",
         promo: "Master 1 - Communication 360",
         mySkills: ["Marketing", "Communication"],
-        photo: "../img/faces/img-julien.png",
+        photo: "img/faces/img-julien.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -53,7 +53,7 @@ const personData = [
         lastName: "Maheo",
         promo: "Master 2 - Informatique (Réseaux)",
         mySkills: ["Administration des systèmes", "Administration réseau"],
-        photo: "../img/faces/img-kevin.png",
+        photo: "img/faces/img-kevin.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -61,7 +61,7 @@ const personData = [
         lastName: "Orfèvres",
         promo: "Bachelor 3 - Informatique",
         mySkills: ["Développement Full Stack"],
-        photo: "../img/faces/img-theodore.png",
+        photo: "img/faces/img-theodore.png",
         content: "Absent"
     },
     {
@@ -69,7 +69,7 @@ const personData = [
         lastName: "Pouillet",
         promo: "Bachelor 3 - Design",
         mySkills: ["Design"],
-        photo: "../img/faces/img-clementine.png",
+        photo: "img/faces/img-clementine.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     },
     {
@@ -77,7 +77,7 @@ const personData = [
         lastName: "Nouzillat",
         promo: "Master 1 - Chef de projet Web",
         mySkills: ["Développement Full Stack"],
-        photo: "../img/faces/img-alix.png",
+        photo: "img/faces/img-alix.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
     }
 ];
@@ -149,7 +149,7 @@ const topFunction = () => {
     const c = document.documentElement.scrollTop || document.body.scrollTop;
     if (c > 0) {
         window.requestAnimationFrame(topFunction);
-        window.scrollTo(0, c - c / 8);
+        window.scrollTo(0, c - c / 2);
     }
 };
 topFunction();
