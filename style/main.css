@@ -72,10 +72,6 @@ a {
           justify-content: center;
 }
 
-.container-top img {
-  width: 66%;
-}
-
 .container-bottom h2 {
   text-align: center;
 }
@@ -102,8 +98,7 @@ li:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0px auto;
-  margin-top: 50px;
+  margin: 50px auto;
   max-width: 1200px;
   text-align: center;
   width: 100%;
@@ -162,17 +157,24 @@ h2 {
 }
 
 .footer-text {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  text-align: center;
   width: 50%;
 }
 
 .social-networks {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  margin-right: 10%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.picto {
+  margin-right: 15px;
+  font-size: 25px;
 }
 
 .fab {

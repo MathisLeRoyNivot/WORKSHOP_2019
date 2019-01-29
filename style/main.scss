@@ -49,9 +49,6 @@ a {
     height: 600px;
     display: flex;
     justify-content: center;
-    img {
-        width: 66%;
-    }
 }
 
 .container-bottom {
@@ -77,8 +74,7 @@ li:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px auto;
-    margin-top: 50px;
+    margin: 50px auto;
     max-width: 1200px;
     text-align: center;
     width: 100%;
@@ -131,13 +127,20 @@ h2 {
 }
 
 .footer-text {
-    display: inline-flex;
+    text-align: center;
     width: 50%;
 }
 
 .social-networks {
-    display: inline-flex;
-    width: 50%;
+    display: flex;
+    width: 40%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.picto {
+    margin-right: 15px;
+    font-size: 25px;
 }
 
 .fab {
