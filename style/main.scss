@@ -12,6 +12,11 @@ a {
     text-decoration: none;
 }
 
+div:target {
+    padding-top: 4em;
+    margin-top: -4em;
+}
+
 // -- NAVBAR STYLES -- 
 nav {
     background: #0c2461;
