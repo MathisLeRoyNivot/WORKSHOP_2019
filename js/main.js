@@ -18,7 +18,7 @@ const personData = [
         firstName: "Dimitri",
         lastName: "Kossoboutzky",
         promo: "Bachelor 1 - 3D Animations",
-        mySkills: ["", ""],
+        mySkills: ["Modélisation 3D"],
         photo: "https://via.placeholder.com/150"
     },
     {
