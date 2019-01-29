@@ -58,11 +58,11 @@ const personData = [
     },
     {
         firstName: "Théodore",
-        lastName: "Nouzillat",
+        lastName: "Orfèvres",
         promo: "Bachelor 3 - Informatique",
         mySkills: ["Développement Full Stack"],
         photo: "https://via.placeholder.com/150",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
+        content: "Absent"
     },
     {
         firstName: "Clémentine",
@@ -120,7 +120,7 @@ document.getElementById("group-members").innerHTML = `
 document.getElementById("footer-content").innerHTML = `
 <div class="footer-text"><p>Les Dix Huitres, 2019 ©</p></div>
 <div class="social-networks">
-    <a class="picto" href="#f" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a class="picto" href="http://bit.do/10huitres" target="_blank"><i class="fab fa-facebook-square"></i></a>
     <a class="picto" href="#t" target="_blank"><i class ="fab fa-twitter-square"></i></a>
     <a class="picto" href="#i" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
