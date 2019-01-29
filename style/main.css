@@ -61,9 +61,24 @@ a {
           flex-direction: column;
 }
 
+.presentation-title,
+.group-title {
+  font-size: 2em;
+  font-weight: 500;
+  margin-top: 40px;
+  text-align: center;
+}
+
+hr {
+  background-color: black;
+  border: none;
+  height: 2px;
+  width: 40%;
+}
+
 .container-top {
   width: 100%;
-  height: 600px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,8 +87,13 @@ a {
           justify-content: center;
 }
 
+.container-top img {
+  width: 100%;
+}
+
 .container-bottom h2 {
   text-align: center;
+  margin-top: 25px;
 }
 
 .container-bottom p {
@@ -124,6 +144,7 @@ h2 {
 
 .lastname {
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .person-promo {
@@ -137,20 +158,23 @@ h2 {
   text-align: justify;
 }
 
+footer {
+  bottom: O;
+}
+
 #footer-content {
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background: #0c2461;
   -webkit-box-shadow: 0px 0px 7px #0c2461;
           box-shadow: 0px 0px 7px #0c2461;
   color: #ffffff;
-  font-size: 0.8em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 80px;
   line-height: 80px;
   width: 100%;
@@ -159,6 +183,12 @@ h2 {
 .footer-text {
   text-align: center;
   width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text p {
+  margin: 0;
 }
 
 .social-networks {
@@ -177,6 +207,6 @@ h2 {
   font-size: 25px;
 }
 
-.fab {
-  font-size: 1em;
+i {
+  font-size: 2em;
 }

@@ -11,7 +11,7 @@ const personData = [
         firstName: "Corentin",
         lastName: "Guillard",
         promo: "Bachelor 2 - Informatique",
-        mySkills: ["Développeur Full Stack - Junior"],
+        mySkills: ["Développement Full Stack - Junior"],
         photo: "https://via.placeholder.com/150"
     },
     {
@@ -25,7 +25,7 @@ const personData = [
         firstName: "Mathis",
         lastName: "Le Roy-Nivot",
         promo: "Bachelor 2 - Informatique",
-        mySkills: ["Développeur Full Stack - Junior", "Montage Vidéo"],
+        mySkills: ["Développement Full Stack - Junior", "Montage Vidéo"],
         photo: "https://via.placeholder.com/150"
     },
     {
@@ -37,7 +37,7 @@ const personData = [
     },
     {
         firstName: "Julien",
-        lastName: "Macillet",
+        lastName: "Marcillet",
         promo: "Master 1 - Communication 360",
         mySkills: ["Marketing", "Communication"],
         photo: "https://via.placeholder.com/150"
@@ -46,7 +46,14 @@ const personData = [
         firstName: "Kévin",
         lastName: "Maheo",
         promo: "Master 2 - Informatique (Réseaux)",
-        mySkills: ["Administration des systèmes"],
+        mySkills: ["Administration des systèmes", "Administration réseau"],
+        photo: "https://via.placeholder.com/150"
+    },
+    {
+        firstName: "Théodore",
+        lastName: "Nouzillat",
+        promo: "Bachelor 3 - Informatique",
+        mySkills: ["Développement Full Stack"],
         photo: "https://via.placeholder.com/150"
     },
     {
@@ -60,7 +67,7 @@ const personData = [
         firstName: "Alix",
         lastName: "Nouzillat",
         promo: "Master 1 - Chef de projet Web",
-        mySkills: ["Développeur Full Stack"],
+        mySkills: ["Développement Full Stack"],
         photo: "https://via.placeholder.com/150"
     }
 ];
@@ -98,10 +105,13 @@ document.getElementById("group-members").innerHTML = `
 `;
 
 document.getElementById("footer-content").innerHTML = `
-<div class="footer-text">${personData.length} personnes composent le groupe #18 - Les Dix Huitres</div>
+<div class="footer-text"><p>Les Dix Huitres, 2019 ©</p></div>
 <div class="social-networks">
     <a class="picto" href="#f" target="_blank"><i class="fab fa-facebook-square"></i></a>
     <a class="picto" href="#t" target="_blank"><i class ="fab fa-twitter-square"></i></a>
     <a class="picto" href="#i" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
 `;
+
+
+// ${personData.length} personnes composent le groupe #18 -
