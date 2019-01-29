@@ -11,7 +11,7 @@ const personData = [
         firstName: "Corentin",
         lastName: "Guillard",
         promo: "Bachelor 2 - Informatique",
-        mySkills: ["Développeur Full Stack - Junior"],
+        mySkills: ["Développement Full Stack - Junior"],
         photo: "https://via.placeholder.com/150"
     },
     {
@@ -25,7 +25,7 @@ const personData = [
         firstName: "Mathis",
         lastName: "Le Roy-Nivot",
         promo: "Bachelor 2 - Informatique",
-        mySkills: ["Développeur Full Stack - Junior", "Montage Vidéo"],
+        mySkills: ["Développement Full Stack - Junior", "Montage Vidéo"],
         photo: "https://via.placeholder.com/150"
     },
     {
@@ -50,17 +50,24 @@ const personData = [
         photo: "https://via.placeholder.com/150"
     },
     {
+        firstName: "Théodore",
+        lastName: "Nouzillat",
+        promo: "Bachelor 3 - Informatique",
+        mySkills: ["Développement Full Stack"],
+        photo: "https://via.placeholder.com/150"
+    },
+    {
         firstName: "Clémentine",
         lastName: "Pouillet",
         promo: "Bachelor 3 - Design",
         mySkills: ["Design"],
         photo: "https://via.placeholder.com/150"
-    }, 
+    },
     {
         firstName: "Alix",
         lastName: "Nouzillat",
         promo: "Master 1 - Chef de projet Web",
-        mySkills: ["Développeur Full Stack"],
+        mySkills: ["Développement Full Stack"],
         photo: "https://via.placeholder.com/150"
     }
 ];

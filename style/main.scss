@@ -20,6 +20,65 @@ nav {
     width: 100%;
 }
 
+.logo-section {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+}
+
+.liste {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-title,
+.group-title {
+    font-size: 2em;
+    font-weight: 500;
+    margin-top: 40px;
+    text-align: center;
+}
+
+hr {
+    background-color: black;
+    border: none;
+    height: 2px;
+    width: 40%;
+}
+
+.container-top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100%;
+    }
+}
+
+.container-bottom {
+    h2 {
+        text-align: center;
+    }
+    p {
+        padding: 0 17%;
+        text-align: justify;
+    }
+}
+
 li {
     list-style-type: none;
 }
@@ -59,6 +118,7 @@ h2 {
 
 .lastname {
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .person-promo {
