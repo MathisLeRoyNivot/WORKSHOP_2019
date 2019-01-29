@@ -3,7 +3,7 @@ const personData = [
         firstName: "Steven",
         lastName: "Fongue",
         status: "Chef d'équipe",
-        promo: "Master 2 - Informatique",
+        promo: "Master 2 - Informatique (Dev)",
         mySkills: ["Développeur"],
         photo: "../img/faces/img-steven.png",
         content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
@@ -92,7 +92,7 @@ ${status.map(status => `${status}`).join("")}
 
 function skills(skills) {
     return `
-<h4>Compétences</h4>
+<h4 class="skills-title">Compétences</h4>
 <ul class="skills-list">
 ${skills.map(skills => `<li class="skills">${skills}</li>`).join("")}
 </ul>
@@ -105,6 +105,7 @@ function personTemplate(person) {
     <img class="person-photo" src="${person.photo}">
     <h2 class="person-name">${person.firstName} <span class="lastname">${person.lastName}</span></h2>
     <h4 class="person-promo">${person.promo}</h4>
+    <hr class="card-separator">
     ${person.mySkills ? skills(person.mySkills) : ""}
     <div class="overlay">
     <div class="text">${person.content}</div>
