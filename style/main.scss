@@ -74,7 +74,6 @@ hr {
     display: flex;
     justify-content: center;
     img {
-        height: auto;
         width: 100%;
     }
 }
@@ -82,6 +81,7 @@ hr {
 .container-bottom {
     h2 {
         text-align: center;
+        margin-top: 25px;
     }
     p {
         padding: 0 17%;
@@ -102,8 +102,7 @@ li:before {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0px auto;
-    margin-top: 50px;
+    margin: 50px auto;
     max-width: 1200px;
     text-align: center;
     width: 100%;
@@ -160,15 +159,25 @@ footer {
 }
 
 .footer-text {
-    display: inline-flex;
-    font-size: 0.8em;
     text-align: center;
-    width: 40%;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    p {
+        margin: 0;
+    }
 }
 
 .social-networks {
-    display: inline-flex;
+    display: flex;
     width: 40%;
+    margin-right: 10%;
+    justify-content: center;
+}
+
+.picto {
+    margin-right: 15px;
+    font-size: 25px;
 }
 
 i {

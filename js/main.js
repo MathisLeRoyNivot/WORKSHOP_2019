@@ -107,9 +107,9 @@ document.getElementById("group-members").innerHTML = `
 document.getElementById("footer-content").innerHTML = `
 <div class="footer-text"><p>Les Dix Huitres, 2019 ©</p></div>
 <div class="social-networks">
-    <a href="#f" target="_blank"><i class="fab fa-facebook-square"></i></a>
-    <a href="#t" target="_blank"><i class ="fab fa-twitter-square"></i></a>
-    <a href="#i" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a class="picto" href="#f" target="_blank"><i class="fab fa-facebook-square"></i></a>
+    <a class="picto" href="#t" target="_blank"><i class ="fab fa-twitter-square"></i></a>
+    <a class="picto" href="#i" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
 `;
 
