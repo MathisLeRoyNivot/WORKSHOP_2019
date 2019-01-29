@@ -8,7 +8,6 @@ a {
     text-decoration: none;
 }
 
-
 // -- NAVBAR STYLES -- 
 nav {
     background: #0c2461;
@@ -44,7 +43,7 @@ li:before {
 .person-card {
     border-radius: 5px;
     box-shadow: 0px 0px 15px rgba(10, 61, 98, .2);
-    margin: 15px; 
+    margin: 15px;
     text-align: center;
     width: 350px;
 }
@@ -74,14 +73,17 @@ h2 {
 }
 
 // -- FOOTER STYLES --
+footer {
+    bottom: O;
+}
+
 #footer-content {
     align-content: center;
     align-items: center;
-    display: flex;
     background: #0c2461;
     box-shadow: 0px 0px 7px #0c2461;
     color: #ffffff;
-    font-size: 0.8em;
+    display: flex;
     height: 80px;
     line-height: 80px;
     width: 100%;
@@ -89,14 +91,16 @@ h2 {
 
 .footer-text {
     display: inline-flex;
-    width: 50%;
+    font-size: 0.8em;
+    text-align: center;
+    width: 40%;
 }
 
 .social-networks {
     display: inline-flex;
-    width: 50%;
+    width: 40%;
 }
 
-.fab {
-    font-size: 1em;
+i {
+    font-size: 2em;
 }

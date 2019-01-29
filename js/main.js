@@ -37,7 +37,7 @@ const personData = [
     },
     {
         firstName: "Julien",
-        lastName: "Macillet",
+        lastName: "Marcillet",
         promo: "Master 1 - Communication 360",
         mySkills: ["Marketing", "Communication"],
         photo: "https://via.placeholder.com/150"
@@ -46,7 +46,7 @@ const personData = [
         firstName: "Kévin",
         lastName: "Maheo",
         promo: "Master 2 - Informatique (Réseaux)",
-        mySkills: ["Administration des systèmes"],
+        mySkills: ["Administration des systèmes", "Administration réseau"],
         photo: "https://via.placeholder.com/150"
     },
     {
@@ -98,10 +98,13 @@ document.getElementById("group-members").innerHTML = `
 `;
 
 document.getElementById("footer-content").innerHTML = `
-<div class="footer">${personData.length} personnes composent le groupe #18 - Les Dix Huitres</div>
+<div class="footer-text"><p>Les Dix Huitres, 2019 ©</p></div>
 <div class="social-networks">
     <a href="#f" target="_blank"><i class="fab fa-facebook-square"></i></a>
     <a href="#t" target="_blank"><i class ="fab fa-twitter-square"></i></a>
     <a href="#i" target="_blank"><i class="fab fa-instagram"></i></a>
 </div>
 `;
+
+
+// ${personData.length} personnes composent le groupe #18 -
