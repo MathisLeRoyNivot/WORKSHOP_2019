@@ -137,19 +137,12 @@ var w = window.innerWidth;
 if (w < 600) {
     document.getElementsByClassName("liste")[0].innerHTML = `
     <a href="#presentation-text">Présentation</a></li>
-    <a href="#top" onclick="return menuBurger()"><img class="logo" src="img/logo-10huitres.png"
+    <a onclick="return menuBurger()"><img class="logo" src="img/logo-10huitres.png"
                         alt="logo"></a>
     <a href="#members">Membres</a>
     <ul id="lp-n-links">
-        <li>
-            <a id="first-link" href="#pagePresentation">Présentation</a>
-        </li>
-        <li>
-            <a id="nav-link2" href="#pageActualités">Actualités</a>
-        </li>
-        <li>
-            <a id="nav-link3" href="#pageContact">Contact</a>
-        </li>
+        <a id="nav-link1" href="#pagePresentation">Présentation</a>
+        <a id="nav-link3" href="#pageContact">Contact</a>
     </ul>
     `;
 } else if (w > 600) {
@@ -159,19 +152,10 @@ if (w < 600) {
                         alt="logo"></a>
     <a href="#members">Membres</a>
     <ul id="lp-n-links">
-        <li>
-            <a id="first-link" href="#pagePresentation">Présentation</a>
-        </li>
-        <li>
-            <a id="nav-link2" href="#pageActualités">Actualités</a>
-        </li>
-        <li>
-            <a id="nav-link3" href="#pageContact">Contact</a>
-        </li>
+        <a id="nav-link1" href="#pagePresentation">Présentation</a>
+        <a id="nav-link3" href="#pageContact">Contact</a>
     </ul>
     `;
-
-
 }
 
 
