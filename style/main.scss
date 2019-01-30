@@ -120,6 +120,10 @@ a {
     flex-direction: column;
 }
 
+.presentation {
+    margin-top: 70px;
+}
+
 .presentation-title,
 .group-title {
     font-size: 2em;
@@ -138,13 +142,15 @@ hr {
 }
 
 .container-top {
+    margin-top: 0px; 
     /* The image used */
-    background-image: url("../img/img-presentation.jpg");
+    background-image: url("../img/banner-group.jpg");
     /* Set a specific height */
-    min-height: 100vh;
+    height: calc(100vh - 70px);
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: 70px;
     background-repeat: no-repeat;
     background-size: cover;
 }
