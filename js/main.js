@@ -1,7 +1,7 @@
 const personData = [
     {
         firstName: "Steven",
-        lastName: "Fongue",
+        lastName: "Fongue (Chef de groupe)",
         status: "Chef d'équipe",
         promo: "Master 2 - Informatique (Dev)",
         mySkills: ["Développeur"],

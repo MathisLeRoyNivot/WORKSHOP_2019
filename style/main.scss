@@ -1,3 +1,5 @@
+$mobile-size: 600px;
+
 * {
     scroll-behavior: smooth;
 }
@@ -155,6 +157,7 @@ hr {
     p {
         padding: 0 17%;
         text-align: justify;
+        text-indent: 5%;
     }
 }
 
@@ -197,7 +200,20 @@ li:before {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(73, 166, 192, 0.8);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5dcfe7+0,49a6c0+50,336683+100 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5dcfe7+0,49a6c0+26,336683+100 */
+    background: #5dcfe7;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #5dcfe7 0%, #49a6c0 26%, #336683 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #5dcfe7 0%, #49a6c0 26%, #336683 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #5dcfe7 0%, #49a6c0 26%, #336683 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5dcfe7', endColorstr='#336683', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    /* IE6-9 fallback on horizontal gradient */
+    //background-color: rgba(73, 166, 192, 0.8);
     backdrop-filter: blur(4px)
 }
 
@@ -323,4 +339,57 @@ footer {
 
 i {
     font-size: 2em;
+}
+
+@media screen and (max-width: $mobile-size) {
+
+    .container-bottom {
+        h2 {
+            margin-top: 25px;
+        }
+        p {
+            padding: 0 10%;
+            text-indent: 10%;
+        }
+    }
+
+    #footer-content {
+        display: block;
+        height: 90px;
+        line-height: 40px;
+        width: 100%;
+    }
+
+    .footer-text {
+        display: block;
+        height: 50%;
+        width: 100%;
+        p {
+            margin: 0;
+        }
+    }
+
+    .social-networks {
+        display: block;
+        height: 50%;
+        width: 100%;
+        margin-right: 10%;
+        text-align: center;
+    }
+
+    .picto {
+        font-size: 25px;
+        margin-right: 15px;
+        transition: all .1s ease-in-out;
+    }
+
+    .picto:hover {
+        color: #5dcfe7;
+        transform: scale(1.15);
+    }
+
+    i {
+        font-size: 2em;
+    }
+
 }
