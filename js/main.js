@@ -129,43 +129,54 @@ document.getElementById("footer-content").innerHTML = `
 
 // ${personData.length} personnes composent le groupe #18 -
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
+
+
+var w = window.innerWidth;
+
+if (w < 600) {
+    document.getElementsByClassName("liste")[0].innerHTML = `
+    <a href="#presentation-text">Présentation</a></li>
+    <a href="#top" onclick="return menuBurger()"><img class="logo" src="img/logo-10huitres.png"
+                        alt="logo"></a>
+    <a href="#members">Membres</a>
+    <ul id="lp-n-links">
+        <li>
+            <a id="first-link" href="#pagePresentation">Présentation</a>
+        </li>
+        <li>
+            <a id="nav-link2" href="#pageActualités">Actualités</a>
+        </li>
+        <li>
+            <a id="nav-link3" href="#pageContact">Contact</a>
+        </li>
+    </ul>
+    `;
+} else if (w > 600) {
+    document.getElementsByClassName("liste")[0].innerHTML = `
+    <a href="#presentation-text">Présentation</a></li>
+    <a href="#top" onclick="return topFunction()"><img class="logo" src="img/logo-10huitres.png"
+                        alt="logo"></a>
+    <a href="#members">Membres</a>
+    <ul id="lp-n-links">
+        <li>
+            <a id="first-link" href="#pagePresentation">Présentation</a>
+        </li>
+        <li>
+            <a id="nav-link2" href="#pageActualités">Actualités</a>
+        </li>
+        <li>
+            <a id="nav-link3" href="#pageContact">Contact</a>
+        </li>
+    </ul>
+    `;
+
+
 }
 
 
-// function menu burger
-
-function MenuBurger() {
-    var x = document.getElementById("lp-n-links");
-    var y = document.getElementById("icons_burger1");
-    var z = document.getElementById("icons_burger2");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
-    if (z.style.display === "block") {
-        y.style.display = "block";
-        z.style.display = "none";
-    } else {
-        y.style.display = "none";
-        z.style.display = "block";
-    }
-}
-
-
-
-
-
 // When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
@@ -180,4 +191,17 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
+}
+
+// function menu burger
+
+function menuBurger() {
+    var x = document.getElementById("lp-n-links");
+    var y = document.getElementById("icons_burger1");
+    var z = document.getElementById("icons_burger2");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
 }
