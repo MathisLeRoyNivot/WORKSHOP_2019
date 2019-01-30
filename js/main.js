@@ -141,8 +141,8 @@ if (w < 600) {
                         alt="logo"></a>
     <a href="#members">Membres</a>
     <ul id="lp-n-links">
-        <a id="nav-link1" href="#pagePresentation">Présentation</a>
-        <a id="nav-link3" href="#pageContact">Contact</a>
+        <a id="nav-link1" href="#presentation-text">Présentation</a>
+        <a id="nav-link3" href="#members">Contact</a>
     </ul>
     `;
 } else if (w > 600) {
@@ -152,8 +152,8 @@ if (w < 600) {
                         alt="logo"></a>
     <a href="#members">Membres</a>
     <ul id="lp-n-links">
-        <a id="nav-link1" href="#pagePresentation">Présentation</a>
-        <a id="nav-link3" href="#pageContact">Contact</a>
+        <a id="nav-link1" href="#presentation-text">Présentation</a>
+        <a id="nav-link3" href="#members">Contact</a>
     </ul>
     `;
 }
@@ -178,7 +178,6 @@ function topFunction() {
 }
 
 // function menu burger
-
 function menuBurger() {
     var x = document.getElementById("lp-n-links");
     var y = document.getElementById("icons_burger1");

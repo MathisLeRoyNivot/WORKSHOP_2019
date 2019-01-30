@@ -77,6 +77,7 @@ img.logo {
   margin: 65px 100px 0px 100px;
   -webkit-transition: all .1s ease-in-out;
   transition: all .1s ease-in-out;
+  z-index: 100;
 }
 
 .liste a:nth-child(2):hover {
@@ -91,31 +92,36 @@ img.logo {
 
 #lp-n-links {
   list-style-type: none;
-  margin: 14px 0 0 0;
-  padding: 0;
+  padding: 80px 0 0 0;
   width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
+  position: absolute;
+  margin: 240px 0 0 0;
   text-align: center;
-  background-color: #E75343;
-  border-radius: 0 0 25px 25px;
+  background-color: #155867;
 }
 
-#lp-n-links li a {
+#lp-n-links :nth-child(2):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#lp-n-links :nth-child(1):hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#lp-n-links a {
   display: block;
   color: white;
-  margin: 25px;
   text-decoration: none;
-  font-size: 22px;
-  padding: 0px 8px 4px 8px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  margin: 10px;
 }
 
-#lp-n-links li a.actif {
+#lp-n-links a.actif {
   border-bottom: 4px solid #e74c3c;
 }
 
