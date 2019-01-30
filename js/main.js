@@ -141,11 +141,8 @@ if (w < 600) {
                         alt="logo"></a>
     <a href="#members">Membres</a>
     <ul id="lp-n-links">
-        <li>
-            <a id="first-link" href="#pagePresentation">Présentation</a>
-        <li>
-            <a id="nav-link3" href="#pageContact">Membres</a>
-        </li>
+        <a id="nav-link1" href="#presentation-text">Présentation</a>
+        <a id="nav-link3" href="#members">Contact</a>
     </ul>
     `;
 } else if (w > 600) {
@@ -154,10 +151,11 @@ if (w < 600) {
     <a href="#top" onclick="return topFunction()"><img class="logo" src="img/logo-10huitres.png"
                         alt="logo"></a>
     <a href="#members">Membres</a>
-
+    <ul id="lp-n-links">
+        <a id="nav-link1" href="#presentation-text">Présentation</a>
+        <a id="nav-link3" href="#members">Contact</a>
+    </ul>
     `;
-
-
 }
 
 
