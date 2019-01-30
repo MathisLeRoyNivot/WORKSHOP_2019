@@ -70,12 +70,6 @@ img.logo {
   width: 200px;
 }
 
-@media screen and (max-width: 769px) {
-  .liste a:nth-child(1) {
-    display: none;
-  }
-}
-
 .liste a:nth-child(2) {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -95,36 +89,32 @@ img.logo {
   width: 200px;
 }
 
-@media screen and (max-width: 769px) {
-  .liste a:nth-child(3) {
-    display: none;
-  }
-}
-
 #lp-n-links {
   list-style-type: none;
-  margin: 14px 0 0 0;
   padding: 0;
   width: 100%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   display: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-top: 110px;
   text-align: center;
-  background-color: #E75343;
-  border-radius: 0 0 25px 25px;
+  background-color: #155867;
+}
+
+#lp-n-links li:before {
+  content: "";
+}
+
+#lp-n-links li:nth-child(1) {
+  padding: 50px;
 }
 
 #lp-n-links li a {
   display: block;
   color: white;
-  margin: 25px;
   text-decoration: none;
-  font-size: 22px;
-  padding: 0px 8px 4px 8px;
+  font-size: 1.5em;
 }
 
 #lp-n-links li a.actif {
@@ -386,6 +376,12 @@ i {
 }
 
 @media screen and (max-width: 600px) {
+  .liste a:nth-child(1) {
+    display: none;
+  }
+  .liste a:nth-child(3) {
+    display: none;
+  }
   .container-bottom h2 {
     margin-top: 25px;
   }

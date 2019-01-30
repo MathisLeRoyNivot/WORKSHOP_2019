@@ -137,18 +137,14 @@ var w = window.innerWidth;
 if (w < 600) {
     document.getElementsByClassName("liste")[0].innerHTML = `
     <a href="#presentation-text">Présentation</a></li>
-    <a href="#top" onclick="return menuBurger()"><img class="logo" src="img/logo-10huitres.png"
+    <a onclick="return menuBurger()"><img class="logo" src="img/logo-10huitres.png"
                         alt="logo"></a>
     <a href="#members">Membres</a>
     <ul id="lp-n-links">
         <li>
             <a id="first-link" href="#pagePresentation">Présentation</a>
-        </li>
         <li>
-            <a id="nav-link2" href="#pageActualités">Actualités</a>
-        </li>
-        <li>
-            <a id="nav-link3" href="#pageContact">Contact</a>
+            <a id="nav-link3" href="#pageContact">Membres</a>
         </li>
     </ul>
     `;
@@ -158,17 +154,7 @@ if (w < 600) {
     <a href="#top" onclick="return topFunction()"><img class="logo" src="img/logo-10huitres.png"
                         alt="logo"></a>
     <a href="#members">Membres</a>
-    <ul id="lp-n-links">
-        <li>
-            <a id="first-link" href="#pagePresentation">Présentation</a>
-        </li>
-        <li>
-            <a id="nav-link2" href="#pageActualités">Actualités</a>
-        </li>
-        <li>
-            <a id="nav-link3" href="#pageContact">Contact</a>
-        </li>
-    </ul>
+
     `;
 
 
@@ -194,7 +180,6 @@ function topFunction() {
 }
 
 // function menu burger
-
 function menuBurger() {
     var x = document.getElementById("lp-n-links");
     var y = document.getElementById("icons_burger1");
