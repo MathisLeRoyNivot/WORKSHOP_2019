@@ -3,10 +3,10 @@ const personData = [
         firstName: "Steven",
         lastName: "Fongue (Chef de groupe)",
         status: "Chef d'équipe",
-        promo: "Master 2 - Informatique (Dev)",
+        promo: "Mastère 2 - Chef de projet web",
         mySkills: ["Développeur"],
         photo: "img/faces/img-steven.png",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
+        content: "Étudiant en Mastère 2 – Chef de projet web, je suis à Ynov Nantes depuis 1 an. Pour ma 2e année de workshop, j’ai le rôle de chef de groupe de l’équipe 10’Huitres. Etant développeur, j’espère pouvoir apporter mes compétences aux différents projets qui seront proposés mais aussi travailler en équipe et découvrir toutes les facettes d’un projet. "
     },
     {
         firstName: "Corentin",
@@ -43,10 +43,10 @@ const personData = [
     {
         firstName: "Julien",
         lastName: "Marcillet",
-        promo: "Master 1 - Communication 360",
+        promo: "Mastère 1 - Communication 360",
         mySkills: ["Marketing", "Communication"],
         photo: "img/faces/img-julien.png",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
+        content: "Cela fait maintenant 4 ans que je suis étudiant chez Ynov Nantes. J’ai validé mon bachelor ESSCA/ISSE l’an dernier. Pour ce workshop je suis dans l’équipe 10’Huitres où j’ai le rôle marketing. J’espère qu’avec les différentes compétences qui composent notre groupe nous irons loin."
     },
     {
         firstName: "Kévin",
@@ -54,7 +54,7 @@ const personData = [
         promo: "Master 2 - Informatique (Réseaux)",
         mySkills: ["Administration des systèmes", "Administration réseau"],
         photo: "img/faces/img-kevin.png",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
+        content: "Actuellement en Mastère 2 Expert Cloud Sécurité et Réseau à l’école Ynov Nantes. Suites à mes différentes expériences professionnelles, j’ai su monter en compétences dans les systèmes de supervision, la virtualisation, la conteneurisation ainsi que des compétences dans le DevOps, depuis peu je réalise des recherches ainsi que des projets pour acquérir des compétences dans l’AIOps. Au sein de l’équipe les 10’Huitres, j’apporte mes compétences et mon expérience pour améliorer et fiabiliser l’infrastructure des systèmes d’informations."
     },
     {
         firstName: "Théodore",
@@ -70,7 +70,7 @@ const personData = [
         promo: "Bachelor 3 - Design",
         mySkills: ["Design"],
         photo: "img/faces/img-clementine.png",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
+        content: "Étudiante à Ynov Nantes depuis maintenant 2 ans, je suis en 3ème année de Bachelor dans le domaine de la Web Com& Graphic Design. L’an dernier, j’ai validé ma MANAA. Dans le groupe les 10’Huitres, je me charge de la partie Créations/Designs. Attirée par le projet, j’espère pouvoir apporter mes compétences nécessaires pour aller loin avec mon groupe. "
     },
     {
         firstName: "Alix",
@@ -78,7 +78,7 @@ const personData = [
         promo: "Master 1 - Chef de projet Web",
         mySkills: ["Développement Full Stack"],
         photo: "img/faces/img-alix.png",
-        content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quo placeat omnis et consectetur deleniti qui explicabo officiis."
+        content: "Étudiant à Ynov Nantes depuis 4 ans, je suis actuellement en mastère 1 – Chef de projet web, je suis attiré par toutes les facettes que peut présenter un projet numérique, que ce soit du développement informatique, de la création visuelle, de la communication ou du marketing. J'espère pouvoir apporter mes compétences et ma polyvalence, afin d’aller le plus loin possible avec notre groupe. "
     }
 ];
 

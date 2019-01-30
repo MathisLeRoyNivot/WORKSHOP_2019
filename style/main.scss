@@ -220,13 +220,13 @@ li:before {
 
 .text {
     color: white;
-    font-size: 1.1em;
+    font-size: 1.2em;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 20%;
+    left: 25%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    transform: translate(-15%, -10%);
     text-align: justify;
 }
 
