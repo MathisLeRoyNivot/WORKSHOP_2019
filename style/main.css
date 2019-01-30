@@ -250,7 +250,8 @@ li:before {
           backdrop-filter: blur(4px);
 }
 
-.person-card:hover .overlay {
+.person-card:hover .overlay,
+.person-card:active .overlay {
   opacity: 1;
 }
 
